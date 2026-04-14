@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吳菀秦 | MIS 職涯規畫 Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af', 
+                        secondary: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; }
+        .nav-item { transition: all 0.2s ease; }
+        .nav-item:hover { background-color: rgba(59, 130, 246, 0.1); color: #2563eb; }
+        .nav-item.active { 
+            background-color: #2563eb !important; 
+            color: white !important; 
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); 
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+    <div class="flex min-h-screen">
+        <aside class="w-64 bg-white border-r border-slate-100 p-6 flex flex-col sticky top-0 h-screen z-40">
+            <div class="flex items-center gap-3 mb-10">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-md">
+                    M
+                </div>
+                <span class="font-black text-2xl text-secondary">Personal Webpage<span class="text-blue-600">.</span></span>
+            </div>
+
+            <nav class="space-y-3 flex-grow" id="sidebar-nav">
+                <a href="#about" class="nav-item active flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition duration-150">
+                    <i class="fas fa-user w-5 text-center"></i>個人簡介
+                </a>
+                <a href="#test" class="nav-item flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 text-sm font-medium transition duration-150">
+                    <i class="fas fa-chart-bar w-5 text-center"></i>職涯測驗
+                </a>
+                <a href="#job" class="nav-item flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 text-sm font-medium transition duration-150">
+                    <i class="fas fa-briefcase w-5 text-center"></i>求職履歷
+                </a>
+                <a href="#plan" class="nav-item flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 text-sm font-medium transition duration-150">
+                    <i class="fas fa-rocket w-5 text-center"></i>未來規畫
+                </a>
+            </nav>
+
+            <div class="mt-auto border-t border-slate-100 pt-6 text-center text-xs text-slate-400">
+                © 2026 吳菀秦
+            </div>
+        </aside>
+
+        <main class="flex-1">
+            
+            <section id="about" class="section bg-white p-12 md:p-20 border-b border-slate-100">
+                <div class="flex items-center gap-12 max-w-5xl mx-auto">
+                    <div class="flex-shrink-0">
+                        <img src="/static/image_acac83.jpg.jpg" alt="個人照" class="w-44 h-44 rounded-full object-cover border-4 border-white ring-4 ring-slate-100 shadow-xl transition-transform hover:scale-105">
+                    </div>
+                    <div>
+                        <span class="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-xs font-semibold mb-3">資訊管理系 | 大二學生</span>
+                        <h1 class="text-5xl font-extrabold text-secondary leading-tight">吳菀秦</h1>
+                        <p class="mt-5 text-lg text-slate-600 leading-relaxed max-w-2xl">
+                            除了精進技術支援（Help Desk）的效率，我享受將解決問題的過程轉化為 SOP 的成就感，期許自己能以細心與專業，成為團隊中不可或缺的 MIS 技術後盾。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="p-12 max-w-5xl mx-auto space-y-20 pb-32">
+
+                <section id="test" class="section scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-10">
+                        <i class="fas fa-chart-pie text-2xl text-blue-600"></i>
+                        <h2 class="text-3xl font-bold text-secondary">職涯測驗結果分析</h2>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+                        <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                            <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center gap-2">
+                                <i class="fas fa-compass text-blue-500"></i>Holland 興趣代碼：CS
+                            </h3>
+                            <div class="space-y-4 text-slate-600 leading-relaxed text-sm">
+                                <p><strong class="text-secondary font-bold">C (事務型)：</strong> 善於處理瑣碎的硬體清單與維護記錄，確保資訊資產帳務相符。</p>
+                                <p><strong class="text-secondary font-bold">S (社會型)：</strong> 具有耐心聽取使用者需求的能力，能以淺顯易懂的方式引導同事排除障礙。</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-10 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                            <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center gap-2">
+                                <i class="fas fa-user-check text-blue-500"></i>核心性格優勢
+                            </h3>
+                            <div class="text-slate-600 leading-relaxed text-sm space-y-4">
+                                <p>「<strong class="text-blue-600 font-bold">自律且極具耐性</strong>」是我的最大優勢。這種特質讓我在面對繁雜維護工作時，能確保每一項任務都精確完成。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center">
+                        <img src="/static/image_ae0cca.jpg.jpg" alt="測驗結果" class="max-w-2xl mx-auto rounded-xl shadow-md">
+                    </div>
+                </section>
+
+                <section id="job" class="section scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-8">
+                        <i class="fas fa-briefcase text-2xl text-blue-600"></i>
+                        <h2 class="text-3xl font-bold text-secondary">求職履歷</h2>
+                    </div>
+                    <div class="bg-[#4a5585] text-white rounded-3xl p-10 md:p-14 shadow-2xl">
+                        <h3 class="text-2xl md:text-3xl font-bold border-b border-white/30 pb-6 mb-10">
+                            我未來想從事的工作：MIS 資訊助理
+                        </h3>
+
+                        <div class="space-y-10">
+                            <div>
+                                <h4 class="text-xl font-bold mb-4 flex items-center gap-2">
+                                    <span class="w-1.5 h-6 bg-blue-400 rounded-full"></span>原因：
+                                </h4>
+                                <p class="text-slate-200 leading-relaxed pl-4">
+                                    從職涯測驗發現自己具備 CS (事務/社會) 特質。在協助排除障礙與整理硬體清單時，我能獲得極大的成就感，確信自己適合擔任企業穩定的 MIS 資訊助理，成為團隊最可靠的支援。
+                                </p>
+                            </div>
+
+                            <div>
+                                <h4 class="text-xl font-bold mb-4 flex items-center gap-2">
+                                    <span class="w-1.5 h-6 bg-blue-400 rounded-full"></span>工作內容：
+                                </h4>
+                                <ul class="list-none space-y-3 text-slate-200 pl-4 text-sm md:text-base">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check-circle text-blue-300 mt-1"></i>
+                                        輔助管理與維護企業內部電腦硬體、系統軟體及週邊設備。
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check-circle text-blue-300 mt-1"></i>
+                                        協助解決內部同仁資訊技術問題（Help Desk），並記錄報修案件。
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fas fa-check-circle text-blue-300 mt-1"></i>
+                                        執行定期系統資料備份作業，並協助落實公司資訊安全規定。
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="text-xl font-bold mb-4 flex items-center gap-2">
+                                    <span class="w-1.5 h-6 bg-blue-400 rounded-full"></span>如何充實自我：
+                                </h4>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pl-4">
+                                    <div class="bg-white/10 p-5 rounded-xl border border-white/20">
+                                        <div class="text-blue-300 font-bold mb-2 text-sm">1. 技術實作</div>
+                                        <p class="text-xs text-slate-300">持續精進 PC 零組件拆裝、系統重灌與基礎網路除錯技巧。</p>
+                                    </div>
+                                    <div class="bg-white/10 p-5 rounded-xl border border-white/20">
+                                        <div class="text-blue-300 font-bold mb-2 text-sm">2. 專業證照</div>
+                                        <p class="text-xs text-slate-300">計畫考取 CompTIA A+ 或相關基礎證照，強化職位公信力。</p>
+                                    </div>
+                                    <div class="bg-white/10 p-5 rounded-xl border border-white/20">
+                                        <div class="text-blue-300 font-bold mb-2 text-sm">3. 知識管理</div>
+                                        <p class="text-xs text-slate-300">建立技術知識庫 (KB)，將常見問題標準化為 SOP 作業流程。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="plan" class="section scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-10">
+                        <i class="fas fa-rocket text-2xl text-blue-600"></i>
+                        <h2 class="text-3xl font-bold text-secondary">未來能力提升規劃</h2>
+                    </div>
+                    
+                    <div class="space-y-8">
+                        <div class="bg-white p-8 rounded-2xl border-l-[10px] border-blue-500 shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-2xl mb-4 text-slate-800">一年計畫：建立維運實務基礎</h4>
+                            <p class="text-slate-600 text-lg leading-relaxed">
+                                掌握硬體拆裝、系統重灌及週邊設備設定；建立 10 份以上常見故障排除 SOP，提升技術支援效率。
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-2xl border-l-[10px] border-indigo-400 shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-2xl mb-4 text-slate-800">三年計畫：深耕專業與證照</h4>
+                            <p class="text-slate-600 text-lg leading-relaxed">
+                                考取 CCNA 與基礎雲端證照；爭取企業實習機會參與真實機房管理，建立個人專業技術知識庫（KB）。
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-2xl border-l-[10px] border-slate-800 shadow-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-2xl mb-4 text-slate-800">十年計畫：技術領袖與管理人員</h4>
+                            <p class="text-slate-600 text-lg leading-relaxed">
+                                轉型為資深資訊主管，主導企業系統架構升級；考取 PMP 證照，具備擬定企業災難復原計畫與管理 IT 團隊的能力。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const sections = document.querySelectorAll('.section');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        window.addEventListener('scroll', () => {
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href').includes(current)) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
